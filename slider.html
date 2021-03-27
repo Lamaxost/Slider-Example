@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			overflow: hidden;
+		}
+		.subtitle {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 10px;
+			line-height: 12px;
+
+			text-align:center;
+
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #3D4F9F;
+		}
+		.title {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 36px;
+			line-height: 45px;
+			text-align: center;
+
+			color: #3D4F9F;
+
+
+		}
+		.title_size_l{
+			font-size: 48px;
+			line-height: 60px;
+		}
+		.title_size_s{
+			font-family: Quicksand;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 30px;
+
+			text-align: center;
+
+			color: #3D4F9F;
+
+		}
+		.description {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 29px;
+			text-align: center;
+			letter-spacing: 0.03em;
+
+			color: #8D96BD;
+		}
+
+		.button {
+			width: 113px;
+			height: 43px;
+			border:none;
+			border-radius: 2px;
+
+			font-style: normal;
+			font-weight: bold;
+			font-size: 13px;
+			line-height: 16px;
+
+			align-items: center;
+			text-align: center;
+
+		}
+		.button_theme_light-blue {
+			background: #D2E1FF;
+			color: #3A79FF;
+		}
+
+		.button_theme_blue{
+			width: 130.08px;
+			height: 43px;
+
+			background: #4C85FF;
+			box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+			border-radius: 2px;
+
+			color:#fff !important;
+		}
+		.button_theme_void{
+			width: 130.08px;
+			height: 43px;
+
+			background: none;
+
+			border: 1px solid #D1D1E4;
+			box-sizing: border-box;
+			border-radius: 2px;
+			color: #ADB4D2;
+
+		}
+		.button_theme_red{
+			width: 113px;
+			height: 43px;
+			background: #FFD7D7;
+			border-radius: 2px;
+
+			font-family: Quicksand;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 13px;
+			line-height: 16px;
+
+			align-items: center;
+			text-align: center;
+
+			color: #D43F3F;
+
+		}
+		.button_border_none{
+			border:none;
+		}
+		.buttons{
+			display: flex;
+		}
+		.our-blog {
+		  padding-top: 1px;
+		  background: #F5F8FF;
+		  height: 865px;
+		}
+
+		.our-blog__subtitle {
+		  margin-top: 104px;
+		}
+
+		.our-blog__title {
+		  margin-top: 20px;
+		}
+
+		.our-blog__slider {
+		  margin: 0 auto;
+		  margin-top: 142px;
+		}
+		.our-blog__slider .slider__info {
+		  position: absolute;
+		  left: 50%;
+		  bottom: -100px;
+		  font-size: 16px;
+		}
+		.our-blog__slider .slider {
+		  margin: 0 auto;
+		}
+		.our-blog__slider .slider__viewer {
+		  height: 400px;
+		  width: 1040px;
+		}
+		.our-blog__slider .slide {
+		  height: 400px;
+		  width: 1000px;
+		  padding: 63px 0 63px 35px;
+		  background-color: #fff;
+		}
+		.our-blog__slider .slide__text {
+		  margin-left: 63px;
+		  width: 400px;
+		}
+		.our-blog__slider .slide__text > .title, .our-blog__slider .slide__text > .description {
+		  text-align: left;
+		}
+		.our-blog__slider .slide__buttons {
+		  position: absolute;
+		  bottom: 0;
+		  margin-left: 0;
+		}
+		.our-blog__slider .slide__add-to-bookmarks {
+		  width: 181px;
+		}
+		.our-blog__slider .left-arrow, .our-blog__slider .right-arrow {
+		  top: 50%;
+		}
+		.our-blog__slider .left-arrow {
+		  left: -10px;
+		}
+		.our-blog__slider .right-arrow {
+		  right: -10px;
+		}
+		.slider__info {
+		  color: #D1D6E3;
+		  display: flex;
+		}
+		.slider__info > * {
+		  margin-right: 13px;
+		}
+		.slider__info > .active {
+		  color: #5283FF;
+		}
+
+		.slider {
+		  position: relative;
+		  display: flex;
+		  flex-wrap: wrap;
+		}
+
+		.slider__slide-container {
+		  width: auto;
+		  width: 10000px;
+		  position: relative;
+		  right: 0;
+		  transition: 1s;
+		  display: flex;
+		}
+
+		.slider__viewer {
+		  display: flex;
+		  margin: 0 auto;
+		  width: 1000px;
+		  overflow: hidden;
+		  position: relative;
+		}
+
+		.slide {
+		  display: flex;
+		  box-sizing: border-box;
+		  margin-right: 80px;
+		}
+
+		.left-arrow, .right-arrow {
+		  background: none;
+		  border: none;
+		  outline: none;
+		  position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<section class="our-blog">
+	<script type="text/javascript" src="js/our-blog-slider-dist.js"></script>
+	<h2 class="subtitle our-blog__subtitle">our Resourses</h2>
+	<h1 class="title our-blog__title">Start reading our blog</h1>
+	<div id="slider1" class="slider our-blog__slider col-md-10">
+		<div class="slider__viewer">
+			<ul class="slider__slide-container">
+				<li class="slide">
+					<img src="img/illustrations_slider.jpg" alt="ilustration" class="slide__image">
+					<div class="slide__text col-md-5">
+						<h1 class="title">How to start planing</h1>
+						<p class="description">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...</p>
+						<div class="buttons slide__buttons">
+							<button class="button button_theme_light-blue">Read now</button>
+							<button class="button button_theme_void button_border_none slide__add-to-bookmarks">Add to your bookmarks</button>
+						</div>
+					</div>
+				</li>
+				<li class="slide">
+					<img src="img/illustrations_slider.jpg" alt="ilustration" class="slide__image">
+					<div class="slide__text col-md-5">
+						<h1 class="title">How to start planing</h1>
+						<p class="description">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...</p>
+						<div class="buttons slide__buttons">
+							<button class="button button_theme_light-blue">Read now</button>
+							<button class="button button_theme_void button_border_none slide__add-to-bookmarks">Add to your bookmarks</button>
+						</div>
+					</div>
+				</li>
+				<li class="slide">
+					<img src="img/illustrations_slider.jpg" alt="ilustration" class="slide__image">
+					<div class="slide__text col-md-5">
+						<h1 class="title">How to start planing</h1>
+						<p class="description">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...</p>
+						<div class="buttons slide__buttons">
+							<button class="button button_theme_light-blue">Read now</button>
+							<button class="button button_theme_void button_border_none slide__add-to-bookmarks">Add to your bookmarks</button>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<nav class="slider__nav">
+			<button class="left-arrow" onclick="previosSlide(1)"><img src="img/left-arrow.svg" alt="left-arrow"></button>
+			<button class="right-arrow" onclick="nextSlide(1)"><img src="img/right-arrow.svg" alt="right-arrow"></button>
+		</nav>
+		<ul class="slider__info">
+			<li class ="active"></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</section>
+	<script>{
+	let currentSlide=0;
+	function nextSlide(n) {
+		currentSlide++;
+		let slides = document.querySelectorAll(`#slider${n}>.slider__viewer>.slider__slide-container>.slide`);
+		let slideCount= slides.length;
+		let slideContainer = document.querySelector(`#slider${n}>.slider__viewer>.slider__slide-container`);
+		let sliderInfoMarks = document.querySelectorAll(`#slider${n}>.slider__info>*`);
+
+		for(let i=0;i<sliderInfoMarks.length;i++){
+			sliderInfoMarks[i].className="";
+		}
+		if(currentSlide>=slideCount){
+			slideContainer.style.right=0;
+			currentSlide=0;
+			sliderInfoMarks[currentSlide].className="active";
+			return;
+		}
+		slideContainer.style.right=((parseInt(slideContainer.style.right)||0)+slides[currentSlide].offsetWidth+80+'px');
+		sliderInfoMarks[currentSlide].className="active";
+	}
+	function previosSlide(n) {
+		currentSlide--;
+		let slides = document.querySelectorAll(`#slider${n}>.slider__viewer>.slider__slide-container>.slide`);
+		let slideCount= slides.length;
+		let slideContainer = document.querySelector(`#slider${n}>.slider__viewer>.slider__slide-container`);
+		let sliderInfoMarks = document.querySelectorAll(`#slider${n}>.slider__info>*`);
+
+		for(let i=0;i<sliderInfoMarks.length;i++){
+			sliderInfoMarks[i].className="";
+		}		
+		if(currentSlide<0){
+			let slidesWidth=0;
+			for(let i=1;i<slides.length;i++){
+				slidesWidth+=slides[i].offsetWidth+80;
+			}
+			slideContainer.style.right=slidesWidth+'px';
+			currentSlide=slideCount-1;
+			sliderInfoMarks[currentSlide].className="active";
+			return;
+		}
+		slideContainer.style.right=((parseInt(slideContainer.style.right))-(slides[currentSlide].offsetWidth+80)+'px');		
+		sliderInfoMarks[currentSlide].className="active";
+	}
+}</script>
+</body>
+</html>
